@@ -1,204 +1,241 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Portfolio | Rajinikanth Boini</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Rajinikanth Boini - data science, engineering, and product portfolio.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
 <body>
+    <div class="bg-effects" aria-hidden="true">
+        <span class="orb orb-1"></span>
+        <span class="orb orb-2"></span>
+        <span class="orb orb-3"></span>
+    </div>
+
     <!-- header design -->
     <header class="header">
-        <a href="#" class="logo">Hi, Hello, Welcome
-            <!-- <img src="namaste2.gif"> -->
-        </a>
+        <a href="#home" class="logo">Rajini<span class="logo-dot">.</span>Vision</a>
         <i class="fa-solid fa-bars" id="menu-icon"></i>
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
             <a href="#services">Services</a>
             <a href="#projects">Projects</a>
-            <a href="#contact">Contacts</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <!-- Home section design -->
     <section class="home" id="home">
-        <div class="home-content">
-            <h3>This is</h3>
-            <h1>Rajinikanth Boini</h1>
-            <h3>And I'm a <span class="multi-text"></span></h3>
-            <p>Master’s student in Data Science with expertise in Java, Python, Spring Boot, and Apache Kafka. 
-                Proficient in cloud technologies as a Google Cloud Associate Cloud Engineer, with experience in Angular front-end development and end-to-end software solutions. 
-                Skilled in SDLC, databases, and data structures, with a strong problem-solving mindset. Passionate about applying machine learning and data science to solve complex challenges in dynamic, data-driven environments.</p>
-            <div class="social-media">
-                <a href="https://www.facebook.com/profile.php?id=61566191933776"><i class="fa-brands fa-facebook-f"></i></i></a>
-                <a href="https://github.com/RajiniBoini/"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.instagram.com/thenameis_rajni/"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/rajinikanth-boini-2b2706147/"><i class="fa-brands fa-linkedin-in"></i></i></a>
+        <div class="hero-grid">
+            <div class="home-content reveal-up">
+                <p class="eyebrow">Data Science . Engineering . Product</p>
+                <h1>Hi, I'm Rajinikanth Boini.</h1>
+                <h2>I build <span class="multi-text"></span> solutions.</h2>
+                <p class="lead">
+                    Master's student in Data Science with experience across Java, Python, Spring Boot, and Apache Kafka.
+                    I design cloud-ready products, analytics pipelines, and polished user experiences that help teams
+                    move from insight to impact.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn primary">Explore Projects</a>
+                    <a href="RajiniBoini_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn ghost">Download Resume</a>
+                </div>
+                <div class="hero-highlights">
+                    <span class="pill">Google Cloud ACE</span>
+                    <span class="pill">Java + Python</span>
+                    <span class="pill">Kafka + ML</span>
+                </div>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/profile.php?id=61566191933776" aria-label="Facebook" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://github.com/RajiniBoini/" aria-label="GitHub" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/thenameis_rajni/" aria-label="Instagram" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/rajinikanth-boini-2b2706147/" aria-label="LinkedIn" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
             </div>
-            <a href="RajiniBoini_Resume.pdf" target="_blank" class="btn download">Download Resume</a>
-        </div>
 
-        <div class="home-img">
-            <img src="img/passport.jpg" alt="">
+            <div class="home-media reveal-right">
+                <div class="profile-frame">
+                    <img src="img/profilepic.JPG" alt="Rajinikanth Boini portrait">
+                </div>
+                <div class="stat-grid">
+                    <div class="stat-card">
+                        <h3>4+</h3>
+                        <p>Years across software & analytics</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>12+</h3>
+                        <p>Projects shipped end-to-end</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-
 
     <!-- About section design -->
     <section class="about" id="about">
-        <div class="about-img">
-            <img src="img/passport.jpg" alt="">
+        <div class="section-title reveal-up">
+            <p class="eyebrow">About</p>
+            <h2>Data-driven builder with a product mindset.</h2>
         </div>
-
-        <div class="about-content">
-            <h2 class="heading">About <span>Me</span></h2>
-            <h3>Data Scientist</h3>
-            <p>Master’s student in Data Science with expertise in Java, Python, Spring Boot, and Apache Kafka. 
-                Proficient in cloud technologies as a Google Cloud Associate Cloud Engineer, with experience in Angular front-end development and end-to-end software solutions. 
-                Skilled in SDLC, databases, and data structures, with a strong problem-solving mindset. Passionate about applying machine learning and data science to solve complex challenges in dynamic, data-driven environments.</p>
-
-                <div class="education">
-                    <h3>Education</h3>
-                    <p><strong>Tagliatela College of Engineering, University of New Haven • West Haven, CT</strong> (Expected May 2026)<br>
-                       Master of Science in Data Science</p>
-                    <p><strong>Coursework:</strong> Machine Learning, Big Data, Data Visualization, Deep Learning, Natural Language Processing (NLP), Leadership in Data & AI Products, Data Ethics</p>
-                    <p><strong>Tools:</strong> PowerBI, R, SQL, TensorFlow, Hadoop, Tableau, AWS Athena, Google Cloud, Apache Kafka</p>
+        <div class="about-grid">
+            <div class="about-card reveal-left">
+                <h3>Story</h3>
+                <p>
+                    I focus on building intelligent systems that scale, from streaming pipelines and real-time dashboards
+                    to full-stack web apps. I care about human-centered design, clear metrics, and operational excellence.
+                </p>
+                <div class="skills">
+                    <span>Python</span>
+                    <span>Java</span>
+                    <span>Spring Boot</span>
+                    <span>Kafka</span>
+                    <span>SQL</span>
+                    <span>GCP</span>
                 </div>
-            <a href="#" class="btn">Read more</a>
+            </div>
+            <div class="about-card highlight reveal-right">
+                <h3>Education</h3>
+                <p><strong>Tagliatela College of Engineering, University of New Haven</strong></p>
+                <p>Master of Science in Data Science . Expected May 2026</p>
+                <p class="muted">Coursework: ML, Big Data, Data Viz, NLP, Deep Learning, Data Ethics</p>
+                <p class="muted">Tools: PowerBI, R, TensorFlow, Hadoop, Tableau, AWS Athena</p>
+            </div>
         </div>
     </section>
 
-    <!-- service  -->
-
+    <!-- services -->
     <section class="services" id="services">
-        <h2 class="headingServ">My <span>Services</span></h2>
-
-        <div class="service-conatiner">
-            <div class="service-box">
-                <i class="fa-solid fa-code"></i>
-                <h3>Web Development</h3>
-                <p>Proficient in creating responsive and dynamic websites using HTML, CSS, and JavaScript.
-                </p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-
-            <div class="service-box">
-                <i class="fa-solid fa-palette"></i>
-                <h3>UI/UX Designing</h3>
-                <p>Experienced in designing engaging and user-centric interfaces for web and mobile applications.
-                </p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-
-            <div class="service-box">
-                <i class="fa-brands fa-android"></i>
-                <h3>Data Analysis and Visualization</h3>
-                <p>Transforming complex data into actionable insights through advanced analytics and intuitive visualizations
-                </p>
-                <a href="#" class="btn">Read More</a>
-            </div>
+        <div class="section-title reveal-up">
+            <p class="eyebrow">Services</p>
+            <h2>What I can help you ship.</h2>
         </div>
 
+        <div class="service-grid">
+            <article class="service-card reveal-up">
+                <i class="fa-solid fa-code"></i>
+                <h3>Full-Stack Delivery</h3>
+                <p>Responsive web apps, APIs, and cloud deployments engineered for performance and scale.</p>
+            </article>
+
+            <article class="service-card reveal-up">
+                <i class="fa-solid fa-chart-line"></i>
+                <h3>Data Products</h3>
+                <p>Analytics pipelines, dashboards, and ML workflows that turn data into action.</p>
+            </article>
+
+            <article class="service-card reveal-up">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <h3>Experience Design</h3>
+                <p>Polished UI/UX systems that align product strategy with real user needs.</p>
+            </article>
+        </div>
     </section>
 
-    <!-- project section  -->
-
+    <!-- project section -->
     <section class="projects" id="projects">
-        <h2 class="heading">Recent <span>Projects</span></h2>
-
-        <div class="project-container">
-            <div class="project-box">
-                <img src="img/airlines.jpeg" alt="#">
-                <div class="project-layer">
-                    <h4>Airlines Ticket Price Analysis</h4>
-                    <p>Analyzed ticket prices and flight delays across major cities in India, with insights visualized using Power BI.</p>
-                    <i class="fa-solid fa-up-right-from-square"></i>
-                </div>
-            </div>
-
-            <div class="project-box">
-                <img src="img/fooddelivery.png" alt="#">
-                <div class="project-layer">
-                    <h4>UI for food delivery</h4>
-                    <p>Created interacted Food Delivery Service User Interface for customers to order food from various outlets in a city</p>
-                    <i class="fa-solid fa-up-right-from-square"></i>
-                </div>
-            </div>
-
-            <div class="project-box">
-                <img src="img/ARglass.png" alt="#">
-                <div class="project-layer">
-                    <h4>Integration of Augmented Reality in BIM    </h4>
-                    <p>Implemented an Augmented Reality system with integrated BIM 3D models, 
-                        enabling lifelike project walkthroughs    and facilitating real-time comparisons of plans against completed work, enhancing project communication and visualization.    </p>
-                    <i class="fa-solid fa-up-right-from-square"></i>
-                </div>
-            </div>
-
-            <div class="project-box">
-                <img src="img/proj1.png" alt="#">
-                <div class="project-layer">
-                    <h4>Web Design</h4>
-                    <p>NA</p>
-                    <i class="fa-solid fa-up-right-from-square"></i>
-                </div>
-            </div>
-
-            <!-- more prpojects to add -->
-            </div>
+        <div class="section-title reveal-up">
+            <p class="eyebrow">Projects</p>
+            <h2>Recent highlights & impact.</h2>
         </div>
 
+        <div class="project-grid">
+            <article class="project-card reveal-up">
+                <img src="img/airlines.jpeg" alt="Airlines Ticket Price Analysis dashboard">
+                <div class="project-content">
+                    <h3>Airlines Ticket Price Analysis</h3>
+                    <p>Analyzed pricing trends and flight delays across India with Power BI storytelling.</p>
+                    <span class="project-tag">Data Visualization</span>
+                </div>
+            </article>
+
+            <article class="project-card reveal-up">
+                <img src="img/fooddelivery.png" alt="Food delivery UI concept">
+                <div class="project-content">
+                    <h3>Food Delivery UI Experience</h3>
+                    <p>Designed a user-first interface for ordering, tracking, and rating local restaurants.</p>
+                    <span class="project-tag">Product Design</span>
+                </div>
+            </article>
+
+            <article class="project-card reveal-up">
+                <img src="img/ARglass.png" alt="Augmented reality BIM visualization">
+                <div class="project-content">
+                    <h3>AR in BIM Workflows</h3>
+                    <p>Delivered immersive walkthroughs and real-time plan-to-build validation using AR.</p>
+                    <span class="project-tag">Spatial Computing</span>
+                </div>
+            </article>
+
+            <article class="project-card reveal-up">
+                <img src="img/proj1.png" alt="Web design showcase">
+                <div class="project-content">
+                    <h3>Responsive Web Design</h3>
+                    <p>Crafted modern layouts with accessibility and performance in mind.</p>
+                    <span class="project-tag">Frontend</span>
+                </div>
+            </article>
+        </div>
     </section>
 
     <!-- contact section -->
-
     <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span>
+        <div class="section-title reveal-up">
+            <p class="eyebrow">Contact</p>
+            <h2>Let's build something with impact.</h2>
+        </div>
 
-            <form>
-                <div class="input-box">
+        <div class="contact-grid">
+            <div class="contact-card reveal-left">
+                <h3>Start a project</h3>
+                <p>Tell me about your challenge and I'll respond within 48 hours.</p>
+                <div class="contact-details">
+                    <div>
+                        <span>Location</span>
+                        <strong>West Haven, CT</strong>
+                    </div>
+                    <div>
+                        <span>Focus</span>
+                        <strong>Data, Cloud, UX</strong>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form reveal-right" action="#">
+                <div class="input-row">
                     <input type="text" placeholder="Full Name" required>
                     <input type="email" placeholder="Email Address" required>
                 </div>
-                <div class="input-box">
-                    <input type="number" placeholder="Mobile Number" required>
-                    <input type="text" placeholder="Email Subject" required>
-
+                <div class="input-row">
+                    <input type="text" placeholder="Company" required>
+                    <input type="text" placeholder="Project Type" required>
                 </div>
-                <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
-                <input type="submit" class="btn" value="Send Message">
+                <textarea name="message" cols="30" rows="6" placeholder="Tell me about your project" required></textarea>
+                <button type="submit" class="btn primary">Send Message</button>
             </form>
-
+        </div>
     </section>
 
-
-    <!-- footer  -->
+    <!-- footer -->
     <footer class="footer">
-        <div class="footer-text">
-            <!-- <p>Copyright &copy; 2024 by Rajini | All Rights Reserved.</p> -->
-        </div>
-
-        <div class="footer-iconTop">
-            <a href="#home"><i class="fa-solid fa-angles-up"></i></a>
-        </div>
-
-
+        <p>Designed & built by Rajinikanth Boini.</p>
+        <a href="#home" class="scroll-top" aria-label="Back to top">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
     </footer>
 
-
-
-
-
-    <script src='main.js'></script>
-
+    <script src="main.js"></script>
 </body>
 
 </html>
