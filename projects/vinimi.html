@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>VINIMI — Visual Intelligence for Occupational Safety</title>
+  <link rel="stylesheet" href="../main.css">
+</head>
+<body>
+  <header class="header">
+    <a href="../index.html" class="logo">Rajini<span class="logo-dot">.</span>Vision</a>
+    <nav class="navbar">
+      <a href="../index.html">Home</a>
+      <a href="../index.html#projects" class="active">Projects</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="projects" style="padding-top:12rem;padding-bottom:6rem;">
+    <div class="section-title">
+      <p class="eyebrow">Project</p>
+      <h2>VINIMI — Visual Intelligence for Occupational Safety</h2>
+    </div>
+
+    <div class="project-page">
+      <p class="lead">VINIMI is an end-to-end safety monitoring platform that uses computer vision and vision-language models to automatically detect PPE violations, identify personnel, send real-time alerts, and produce searchable audit logs for compliance.</p>
+
+      <h3>My role</h3>
+      <p>Lead engineer & designer — owned system architecture, model integration, real-time pipeline, and alerting infrastructure.</p>
+
+      <h3>Core technologies</h3>
+      <ul>
+        <li>YOLOv8 (helmet detection), DeepFace (face embeddings), OpenCV</li>
+        <li>Qwen VLM via HuggingFace (vision-language Q&A)</li>
+        <li>FastAPI backend, React + TypeScript frontend</li>
+        <li>MySQL for metadata, Twilio for SMS alerts</li>
+      </ul>
+
+      <h3>Key features</h3>
+      <ul>
+        <li>Real-time per-frame helmet detection + face recognition (configurable thresholds)</li>
+        <li>Multi-sample worker enrollment with aggregated embeddings</li>
+        <li>Vision-language questions over images/videos with injected detector facts</li>
+        <li>Video analysis with frame sampling and majority-voting for robust ID</li>
+        <li>Cooldown-throttled SMS alerts and audit-ready violation logs</li>
+      </ul>
+      <h3>Screenshots</h3>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.6rem;margin-bottom:2.4rem;">
+        <figure style="background:var(--card);padding:1rem;border-radius:12px;border:1px solid var(--border);">
+          <img src="../img/vinimi1.jpg" alt="VINIMI dashboard — live monitoring" style="width:100%;height:auto;border-radius:8px;" loading="lazy">
+          <figcaption style="font-size:1.3rem;margin-top:0.6rem;color:var(--muted);">Live monitoring dashboard — per-camera view</figcaption>
+        </figure>
+
+        <figure style="background:var(--card);padding:1rem;border-radius:12px;border:1px solid var(--border);">
+          <img src="../img/vinimi2.jpg" alt="VINIMI dashboard — violation detail" style="width:100%;height:auto;border-radius:8px;" loading="lazy">
+          <figcaption style="font-size:1.3rem;margin-top:0.6rem;color:var(--muted);">Violation detail view — snapshot, worker profile, and actions</figcaption>
+        </figure>
+      </div>
+
+      <h3>Impact</h3>
+      <p>VINIMI reduces manual inspection overhead, improves incident traceability, and speeds compliance reporting. Typical performance: ~200ms per frame (YOLO + embedding), gallery search &lt;50ms.</p>
+
+      <h3>Security & privacy</h3>
+      <p>Embeddings are stored instead of raw faces, retention policies and auto-delete options are configurable, and APIs use JWT-based auth with role-based access control.</p>
+
+      <h3>Links</h3>
+      <p>
+        <a href="https://github.com/vinimifall2025-ops/VINIMI/wiki/The-VINIMI-:-Purpose-and-Implementation" target="_blank" rel="noopener noreferrer">Project wiki</a> •
+        <a href="https://github.com/vinimifall2025-ops/VINIMI" target="_blank" rel="noopener noreferrer">Repository</a>
+      </p>
+
+      <p style="margin-top:2.4rem;"><a href="../index.html#projects" class="btn ghost">Back to projects</a></p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Designed & built by Rajinikanth Boini.</p>
+  </footer>
+</body>
+</html>
