@@ -44,9 +44,9 @@
                 <h1>Hi, I'm Rajinikanth Boini.</h1>
                 <h2>I build <span class="multi-text"></span> solutions.</h2>
                 <p class="lead">
-                    Master's student in Data Science with experience across Java, Python, Spring Boot, and Apache Kafka.
+                    Recent Master's graduate in Data Science with hands-on experience across Java, Python, Spring Boot, and Apache Kafka.
                     I design cloud-ready products, analytics pipelines, and polished user experiences that help teams
-                    move from insight to impact.
+                    move from insight to impact. Currently seeking opportunities to drive innovation in data-driven organizations.
                 </p>
                 <div class="hero-actions">
                     <a href="#projects" class="btn primary">Explore Projects</a>
@@ -151,49 +151,72 @@
         </div>
 
         <div class="project-grid">
-            <article class="project-card reveal-up">
+            <article class="project-card reveal-up" data-project="vinimi">
                 <img src="img/vinimi1.jpg" alt="VINIMI dashboard screenshot">
                 <div class="project-content">
-                    <h3><a href="projects/vinimi.html">VINIMI — Visual Intelligence for Occupational Safety</a></h3>
+                    <h3>VINIMI — Visual Intelligence for Occupational Safety</h3>
                     <p>AI-driven real-time helmet & worker compliance system (YOLOv8, DeepFace, Qwen VLM). Automated alerts, audit logs, and VLM Q&A.</p>
                     <span class="project-tag">AI · Computer Vision · Safety</span>
+                    <button class="btn-learn-more" aria-label="View project details">View Details</button>
                 </div>
             </article>
-            <article class="project-card reveal-up">
-                <img src="img/airlines.jpeg" alt="Airlines Ticket Price Analysis dashboard">
+            <article class="project-card reveal-up" data-project="trash">
+                <img src="img/Trash_detection.png" alt="Trash Segmentation detection screenshot">
                 <div class="project-content">
-                    <h3>Airlines Ticket Price Analysis</h3>
-                    <p>Analyzed pricing trends and flight delays across India with Power BI storytelling.</p>
-                    <span class="project-tag">Data Visualization</span>
+                    <h3>Trash Segmentation — Waste Detection & Segmentation</h3>
+                    <p>Deep-learning pipeline for multi-class waste segmentation with dataset prep, training report, and evaluation artifacts.</p>
+                    <span class="project-tag">Computer Vision · Segmentation · Research</span>
+                    <button class="btn-learn-more" aria-label="View project details">View Details</button>
+                </div>
+            </article>
+            <article class="project-card reveal-up" data-project="jetblue">
+                <img src="img/airlines.jpeg" alt="JetBlue Sentiment Analysis ETL Pipeline">
+                <div class="project-content">
+                    <h3>JetBlue Sentiment Intelligence — ETL Data Pipeline</h3>
+                    <p>End-to-end automated ETL pipeline for real-time customer sentiment analysis from Twitter. ML classification, AWS S3 storage, GitHub Actions orchestration, and Power BI dashboards.</p>
+                    <span class="project-tag">ML · ETL · Cloud · NLP</span>
+                    <a href="https://github.com/RajiniBoini/JetBlue_Airlines_SA" target="_blank" rel="noopener noreferrer" class="btn-learn-more">View on GitHub</a>
                 </div>
             </article>
 
-            <article class="project-card reveal-up">
+            <article class="project-card reveal-up" data-project="food">
                 <img src="img/fooddelivery.png" alt="Food delivery UI concept">
                 <div class="project-content">
                     <h3>Food Delivery UI Experience</h3>
                     <p>Designed a user-first interface for ordering, tracking, and rating local restaurants.</p>
                     <span class="project-tag">Product Design</span>
+                    <button class="btn-learn-more" aria-label="View project details">View Details</button>
                 </div>
             </article>
 
-            <article class="project-card reveal-up">
+            <article class="project-card reveal-up" data-project="ar">
                 <img src="img/ARglass.png" alt="Augmented reality BIM visualization">
                 <div class="project-content">
                     <h3>AR in BIM Workflows</h3>
                     <p>Delivered immersive walkthroughs and real-time plan-to-build validation using AR.</p>
                     <span class="project-tag">Spatial Computing</span>
+                    <button class="btn-learn-more" aria-label="View project details">View Details</button>
                 </div>
             </article>
+        </div>
 
-            <article class="project-card reveal-up">
-                <img src="img/Trash_detection.png" alt="Trash Segmentation detection screenshot">
-                <div class="project-content">
-                    <h3><a href="projects/trash_segmentation.html">Trash Segmentation — Waste Detection & Segmentation</a></h3>
-                    <p>Deep-learning pipeline for multi-class waste segmentation with dataset prep, training report, and evaluation artifacts.</p>
-                    <span class="project-tag">Computer Vision · Segmentation · Research</span>
+        <!-- Project Detail Modal -->
+        <div id="projectModal" class="project-modal">
+            <div class="modal-content">
+                <button class="modal-close" aria-label="Close modal">&times;</button>
+                <div class="modal-header">
+                    <img id="modalImage" src="" alt="Project image">
                 </div>
-            </article>
+                <div class="modal-body">
+                    <h2 id="modalTitle"></h2>
+                    <div id="modalDescription"></div>
+                    <div id="modalDetails"></div>
+                    <div class="modal-actions">
+                        <a id="modalLink" href="#" target="_blank" rel="noopener noreferrer" class="btn primary" style="display:none;">View Full Project</a>
+                        <button class="btn ghost modal-close">Close</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
