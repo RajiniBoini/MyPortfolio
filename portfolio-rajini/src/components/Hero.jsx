@@ -7,7 +7,7 @@ export default function Hero() {
 
   useEffect(() => {
     const typed = new Typed(typedElement.current, {
-      strings: ['data products', 'analytics', 'cloud platforms', 'AI-ready experiences'],
+      strings: ['computer vision systems', 'ML pipelines', 'real-time AI platforms', 'production AI'],
       typeSpeed: 70,
       backSpeed: 50,
       backDelay: 1200,
@@ -21,24 +21,23 @@ export default function Hero() {
     <section className="home" id="home">
       <div className="hero-grid">
         <div className="home-content reveal-up">
-          <p className="eyebrow">Data Science . Engineering . Product</p>
+          <p className="eyebrow">Data Scientist | Machine Learning Engineer | AI Product Builder</p>
           <h1>Hi, I'm Rajinikanth Boini.</h1>
           <h2>
-            I build <span className="multi-text" ref={typedElement}></span> solutions.
+            I build <span className="multi-text" ref={typedElement}></span>.
           </h2>
           <p className="lead">
-            Recent Master's graduate in Data Science with hands-on experience across Java, Python, Spring Boot, and Apache Kafka.
-            I design cloud-ready products, analytics pipelines, and polished user experiences that help teams
-            move from insight to impact. Currently seeking opportunities to drive innovation in data-driven organizations.
+            Master's graduate in Data Science building production-ready AI systems with real-world impact. I specialize in computer vision, machine learning, and scalable data pipelines—taking ideas from prototype to deployment. I focus on writing clean, maintainable code, measuring performance with clear metrics, and designing systems that work reliably in production environments.
           </p>
           <div className="hero-actions">
             <a href="#projects" className="btn primary">Explore Projects</a>
             <a href={asset('RajiniBoini_Resume.pdf')} target="_blank" rel="noopener noreferrer" className="btn ghost">Download Resume</a>
           </div>
           <div className="hero-highlights">
-            <span className="pill">Google Cloud ACE</span>
-            <span className="pill">Java + Python</span>
-            <span className="pill">Kafka + ML</span>
+            <span className="pill">Computer Vision</span>
+            <span className="pill">Deep Learning</span>
+            <span className="pill">Production ML</span>
+            <span className="pill">Python + PyTorch</span>
           </div>
           <div className="social-media">
             <a href="https://www.facebook.com/profile.php?id=61566191933776" aria-label="Facebook" rel="noopener noreferrer" target="_blank">

@@ -1,6 +1,8 @@
 import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function ProjectModal({ project, onClose }) {
+  const navigate = useNavigate();
   useEffect(() => {
     document.body.style.overflow = 'hidden';
     return () => {
@@ -55,14 +57,26 @@ export default function ProjectModal({ project, onClose }) {
             </div>
           </div>
           <div className="modal-actions">
+            {project.slug && (
+              <button 
+                onClick={() => {
+                  onClose();
+                  navigate(`/projects/${project.slug}`);
+                  window.scrollTo(0, 0);
+                }}
+                className="btn primary"
+              >
+                Read Full Story
+              </button>
+            )}
             {project.link && (
               <a 
                 href={project.link} 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="btn primary"
+                className="btn secondary"
               >
-                View Full Project
+                View on GitHub
               </a>
             )}
             <button 

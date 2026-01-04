@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ScrollReveal from 'scrollreveal';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -7,9 +8,11 @@ import Services from './components/Services';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import VisionARBackground from './components/VisionARBackground';
+import VinimiProject from './pages/VinimiProject';
 import './main.css';
 
-export default function App() {
+function HomePage() {
   useEffect(() => {
     if (window.ScrollReveal) {
       const sr = ScrollReveal({
@@ -28,11 +31,14 @@ export default function App() {
 
   return (
     <>
-      <div className="bg-effects" aria-hidden="true">
-        <span className="orb orb-1"></span>
-        <span className="orb orb-2"></span>
-        <span className="orb orb-3"></span>
-      </div>
+      {/* 3D Vision + AI + AR Background */}
+      <VisionARBackground
+        intensity={0.7}
+        particleCount={20}
+        gridOpacity={0.3}
+        scanSpeed={0.3}
+        parallaxStrength={1}
+      />
       
       <Header />
       <Hero />
@@ -42,5 +48,16 @@ export default function App() {
       <Contact />
       <Footer />
     </>
+  );
+}
+
+export default function App() {
+  return (
+    <BrowserRouter basename="/portfolio-react">
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/projects/vinimi" element={<VinimiProject />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
