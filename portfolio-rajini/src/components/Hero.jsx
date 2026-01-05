@@ -31,7 +31,7 @@ export default function Hero() {
           </p>
           <div className="hero-actions">
             <a href="#projects" className="btn primary">Explore Projects</a>
-            <a href={asset('RajiniBoini_Resume.pdf')} target="_blank" rel="noopener noreferrer" className="btn ghost">Download Resume</a>
+            <a href={asset('RajinResume_2025.1.pdf')} target="_blank" rel="noopener noreferrer" className="btn ghost">Download Resume</a>
           </div>
           <div className="hero-highlights">
             <span className="pill">Computer Vision</span>
