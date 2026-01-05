@@ -53,7 +53,7 @@ function HomePage() {
 
 export default function App() {
   return (
-    <BrowserRouter basename="/portfolio-react">
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/projects/vinimi" element={<VinimiProject />} />
