@@ -7,7 +7,7 @@ export default function Hero() {
 
   useEffect(() => {
     const typed = new Typed(typedElement.current, {
-      strings: ['computer vision systems', 'ML pipelines', 'real-time AI platforms', 'production AI'],
+      strings: ['GenAI platforms', 'ML pipelines at scale', 'RAG systems', 'AI agents', 'production ML systems'],
       typeSpeed: 70,
       backSpeed: 50,
       backDelay: 1200,
@@ -21,23 +21,23 @@ export default function Hero() {
     <section className="home" id="home">
       <div className="hero-grid">
         <div className="home-content reveal-up">
-          <p className="eyebrow">Data Scientist | Machine Learning Engineer | AI Product Builder</p>
-          <h1>Hi, I'm Rajinikanth Boini.</h1>
+          <p className="eyebrow">Data Scientist | GenAI Engineer | ML Systems Builder</p>
+          <h1>Hi, I'm Rajinikanth.</h1>
           <h2>
             I build <span className="multi-text" ref={typedElement}></span>.
           </h2>
           <p className="lead">
-            Master's graduate in Data Science building production-ready AI systems with real-world impact. I specialize in computer vision, machine learning, and scalable data pipelines—taking ideas from prototype to deployment. I focus on writing clean, maintainable code, measuring performance with clear metrics, and designing systems that work reliably in production environments.
+            Data Scientist with 5+ years building production-grade AI/ML systems across banking, healthcare, retail, and insurance. Expert in GenAI platforms, RAG architectures, AI agents, and scalable data pipelines. I specialize in translating complex data into reliable, explainable insights while maintaining rigorous governance, safety, and compliance standards.
           </p>
           <div className="hero-actions">
             <a href="#projects" className="btn primary">Explore Projects</a>
-            <a href={asset('RajinResume_2025.1.pdf')} target="_blank" rel="noopener noreferrer" className="btn ghost">Download Resume</a>
+            <a href={asset('Rajnikanth_Profile26.pdf')} download="Rajnikanth_Profile26.pdf" className="btn ghost">Download Resume</a>
           </div>
           <div className="hero-highlights">
-            <span className="pill">Computer Vision</span>
-            <span className="pill">Deep Learning</span>
-            <span className="pill">Production ML</span>
-            <span className="pill">Python + PyTorch</span>
+            <span className="pill">GenAI & LLMs</span>
+            <span className="pill">RAG Architectures</span>
+            <span className="pill">MLOps & Cloud</span>
+            <span className="pill">Python & SQL</span>
           </div>
           <div className="social-media">
             <a href="https://www.facebook.com/profile.php?id=61566191933776" aria-label="Facebook" rel="noopener noreferrer" target="_blank">
@@ -56,17 +56,22 @@ export default function Hero() {
         </div>
 
         <div className="home-media reveal-right">
-          <div className="profile-frame">
-            <img src={asset('img/profilepic.JPG')} alt="Rajinikanth Boini portrait" />
-          </div>
           <div className="stat-grid">
             <div className="stat-card">
-              <h3>4+</h3>
-              <p>Years across software & analytics</p>
+              <h3>5+</h3>
+              <p>Years in Data Science & ML Engineering</p>
             </div>
             <div className="stat-card">
-              <h3>12+</h3>
-              <p>Projects shipped end-to-end</p>
+              <h3>20+</h3>
+              <p>Production AI/ML projects shipped</p>
+            </div>
+            <div className="stat-card">
+              <h3>4</h3>
+              <p>Domains: Finance, Healthcare, Retail, Insurance</p>
+            </div>
+            <div className="stat-card">
+              <h3>3</h3>
+              <p>Cloud Platforms: AWS, Azure, GCP</p>
             </div>
           </div>
         </div>

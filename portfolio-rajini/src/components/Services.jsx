@@ -8,21 +8,21 @@ export default function Services() {
 
       <div className="service-grid">
         <article className="service-card reveal-up">
-          <i className="fa-solid fa-eye"></i>
-          <h3>Computer Vision</h3>
-          <p>Detection, segmentation, and recognition models for real-time video analytics and safety systems.</p>
+          <i className="fa-solid fa-sparkles"></i>
+          <h3>GenAI & LLM Platforms</h3>
+          <p>Design and deploy production-grade GenAI systems with RAG architectures, AI agents, prompt engineering, evaluation frameworks (RAGAS), and governance controls for enterprise compliance.</p>
         </article>
 
         <article className="service-card reveal-up">
           <i className="fa-solid fa-brain"></i>
-          <h3>ML & NLP Systems</h3>
-          <p>End-to-end machine learning pipelines, model fine-tuning, and NLP systems for production deployment.</p>
+          <h3>ML Systems & Agents</h3>
+          <p>End-to-end ML pipelines, multi-agent workflows, model evaluation, feature engineering, and production deployment with monitoring & retraining triggers.</p>
         </article>
 
         <article className="service-card reveal-up">
-          <i className="fa-solid fa-chart-line"></i>
-          <h3>Data Pipelines & Engineering</h3>
-          <p>Scalable data architectures, real-time processing with Kafka, and distributed database systems.</p>
+          <i className="fa-solid fa-gears"></i>
+          <h3>MLOps & Data Engineering</h3>
+          <p>Scalable data pipelines, cloud infrastructure (AWS/Azure/GCP), CI/CD automation, containerization, Kubernetes orchestration, and monitoring systems.</p>
         </article>
       </div>
     </section>
